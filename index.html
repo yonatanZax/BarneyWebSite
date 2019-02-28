@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <ul id="toolbar">
+
+        <li><h4>Logo</h4></li>
+        <li style="float:right"><a href="#contact">Contact Me</a></li>
+        <li style="float:right"><a href="#spa">Q&A</a></li>
+        <li style="float:right"><a href="#qrcoder">QR code</a></li>
+        <li style="float:right"><a href="#like">Like</a></li>
+        <li style="float:right"><a href="#playlist">My Playlist</a></li>      
+        <li style="float:right"><a href="#photos">My Photos</a></li>        
+        <li style="float:right"><a href="#about">About Me</a></li>
+        
+    </ul>
+
+
+		  
+<section id="about" class="section">
+  <hr><h3 align = center > About </h3><hr>
+  <pre><span class="inner-pre" style="font-size:16px">
+      Barnabas "Barney" Stinson is a fictional character portrayed by Neil Patrick Harris and created for the CBS television series How I Met Your Mother.
+      He is known for his love of wearing expensive suits, laser tag, alcohol and various catchphrases.
+      Oftenly says: "Suit up!", "Legendary", "Wait for it" (often combining the two as "legen—wait for it—dary!").
+      In later seasons, he has a few serious relationships, marries, divorces, and has a child.
+    </span></pre>
+
+</section>
+
+<section id="photos" class="section">
+    <hr><h3 align = center > My Photos </h3><hr>
+
+    <br>
+
+
+    <div align="center">
+
+        <img src=Images/b1.jpg width=350 height=250 />
+        <img src=Images/b2.jpg width=333 height=250 />
+        <br>
+    
+        <!-- <img src=Images/b3.jpg width=800 height=300 /> -->
+        <img src=Images/b4.jpg width=680 height=300 />
+
+    </div>
+
+
+
+<br/>
+</section>
+
+<section id="playlist" class="section">
+    <hr><h3 align = center > My Playlist </h3><hr>
+
+  
+<br/>
+<br/>
+<br/>
+
+</section>
+
+<section id="like" class="section">
+    <hr><h3 align = center > Add 1 Like </h3><hr>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+give me a like
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+    <hr><h3 align = center > Scan my code </h3><hr>
+
+
+
+<br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+scan my code
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="spa" class="section">
+    <hr><h3 align = center > Ans </h3><hr>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+ans
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+    <hr><h3 align = center > Contact me </h3><hr>
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+contact me
+<br/>
+<br/>
+<br/>
+</section>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+
+
+<script type="text/javascript">
+// Get the container element
+var btnContainer = document.getElementById("toolbar");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("li");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
+</script>
+</body>
+</html>
