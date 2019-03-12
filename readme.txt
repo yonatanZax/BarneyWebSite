@@ -6,5 +6,5 @@ https://github.com/yonatanZax/BarneyWebSite
 
 
 Personal info:
-יונתן זקס
+Yonatan Zax
 204662779
